@@ -986,11 +986,16 @@ input, select, textarea {
 				position: relative;
 				border: 0;
 				outline: 0;
+				width: 100%;/*Tina:給縮圖的objict-fit用的設定*/
+				height: 100%;/*Tina:給縮圖的objict-fit用的設定*/
 			}
 
 				#thumbnails article .thumbnail img {
 					display: block;
 					width: 100%;
+					width: 100%;/*Tina:給縮圖的objict-fit用的設定*/
+					height: 100%;/*Tina:給縮圖的objict-fit用的設定*/
+					object-fit: cover;	
 				}
 
 				#thumbnails article .thumbnail:before {
@@ -1221,8 +1226,9 @@ input, select, textarea {
 				width: 100%;
 				height: 100%;
 				background-repeat: no-repeat;
-				background-size: cover;
+				background-size: contain;/*Tina:cover雖然比例不便但是會被剪裁，改成contain可以看到整張圖不會被裁減，比例不變*/
 				opacity: 0;
+				background-color: aliceblue;
 			}
 
 			#viewer .slide:before {

@@ -3009,9 +3009,9 @@ button:disabled,
 		width: 50% !important;
 	}
 
-	.tiles article:nth-child(5) {
+	/* .tiles article:nth-child(5) {
 		width: 100% !important;
-	}
+	} */
 
 }
 
